@@ -1,0 +1,6 @@
+git clone https://github.com/hifumiazusa/GUI_2026-N13310005.git
+git add .
+git config --global user.email "0955545sc@gmail.com"
+git config --globaal user.name "hifumiazusa"
+git commit-m"20260310"
+git push -u origin main
