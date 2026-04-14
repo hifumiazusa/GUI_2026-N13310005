@@ -16,5 +16,34 @@ namespace N13310005
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new FormbtnBigger().Show();
+        }
+
+        private void (object sender, EventArgs e)
+        {
+private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string str = textBox1.Text;
+            label2.Text = str;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    private void button1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
