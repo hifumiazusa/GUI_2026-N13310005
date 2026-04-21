@@ -22,9 +22,8 @@ namespace N13310005
             new FormbtnBigger().Show();
         }
 
-        private void (object sender, EventArgs e)
-        {
-private void textBox1_TextChanged(object sender, EventArgs e)
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -39,11 +38,16 @@ private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
-    }
+    
 
-    private void button1_Paint(object sender, PaintEventArgs e)
+        private void button1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
         }
     }
 }
