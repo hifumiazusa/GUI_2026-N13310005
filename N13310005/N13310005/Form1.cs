@@ -49,5 +49,33 @@ namespace N13310005
         {
             new Form2().Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 轉換_Click(object sender, EventArgs e)
+
+        {
+            int c = Int32.Parse(textBox3.Text);
+            int f = c*(9/5) + 32;
+            label1.Text = f.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

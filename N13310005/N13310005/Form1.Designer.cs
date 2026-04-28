@@ -35,6 +35,11 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.攝氏 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Button = new System.Windows.Forms.Button();
+            this.華氏 = new System.Windows.Forms.Label();
+            this.請輸入華氏後轉換按鈕 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,12 +49,13 @@
             this.label1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(24, 60);
+            this.label1.Location = new System.Drawing.Point(362, 217);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(419, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "N13310005- HAHAHA";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // fileSystemWatcher1
             // 
@@ -98,7 +104,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微軟正黑體 Light", 15F);
-            this.button2.Location = new System.Drawing.Point(534, 392);
+            this.button2.Location = new System.Drawing.Point(304, 427);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 79);
             this.button2.TabIndex = 6;
@@ -106,12 +112,64 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // 攝氏
+            // 
+            this.攝氏.AutoSize = true;
+            this.攝氏.ForeColor = System.Drawing.Color.CadetBlue;
+            this.攝氏.Location = new System.Drawing.Point(583, 276);
+            this.攝氏.Name = "攝氏";
+            this.攝氏.Size = new System.Drawing.Size(31, 16);
+            this.攝氏.TabIndex = 7;
+            this.攝氏.Text = "攝氏";
+            this.攝氏.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(618, 293);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.TabIndex = 8;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // Button
+            // 
+            this.Button.Location = new System.Drawing.Point(643, 324);
+            this.Button.Name = "Button";
+            this.Button.Size = new System.Drawing.Size(75, 23);
+            this.Button.TabIndex = 9;
+            this.Button.Text = "轉換";
+            this.Button.UseVisualStyleBackColor = true;
+            this.Button.Click += new System.EventHandler(this.轉換_Click);
+            // 
+            // 華氏
+            // 
+            this.華氏.AutoSize = true;
+            this.華氏.Location = new System.Drawing.Point(626, 350);
+            this.華氏.Name = "華氏";
+            this.華氏.Size = new System.Drawing.Size(37, 16);
+            this.華氏.TabIndex = 10;
+            this.華氏.Text = "華氏F";
+            // 
+            // 請輸入華氏後轉換按鈕
+            // 
+            this.請輸入華氏後轉換按鈕.AutoSize = true;
+            this.請輸入華氏後轉換按鈕.Location = new System.Drawing.Point(689, 350);
+            this.請輸入華氏後轉換按鈕.Name = "請輸入華氏後轉換按鈕";
+            this.請輸入華氏後轉換按鈕.Size = new System.Drawing.Size(31, 16);
+            this.請輸入華氏後轉換按鈕.TabIndex = 11;
+            this.請輸入華氏後轉換按鈕.Text = "華氏";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(933, 600);
+            this.Controls.Add(this.請輸入華氏後轉換按鈕);
+            this.Controls.Add(this.華氏);
+            this.Controls.Add(this.Button);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.攝氏);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
@@ -123,6 +181,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,6 +197,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label 請輸入華氏後轉換按鈕;
+        private System.Windows.Forms.Label 華氏;
+        private System.Windows.Forms.Button Button;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label 攝氏;
     }
 }
 
